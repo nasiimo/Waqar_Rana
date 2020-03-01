@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GetJSON for API -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+
+  <script src = "js/source.js"></script>
+  </head>
+
+<body>
+  <!-- Menu -->
+<header class="head">
+  <a class="logo" href ="index.html"><img src ="img/logo.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="commercial.html">COMMERCIAL FLIGHTS</a></li>
+    <li><a href="first.html">FIRST FLIGHT</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</header>
+<!-- This is the form section -->
+
+<!-- This is the heading section in the form -->
+<div class="form">
+  <div class="place">
+    <h1>Contact us</h1>
+    <p>We are selling first row seats for the liveshow of </br>worlds first commercial flight</p>
+  </div>
+
+  <!-- This is the form input fields -->
+  <div class="box">
+    <form>
+      <input type="text" name="name" class="form-control" id="fname" placeholder="First name" required onsubmit="validateName()"><br>
+      <input type="text" name="name" class="form-control" id="lname" placeholder="Last name" required onsubmit="validateName()"><br>
+      <input type="text" name="number" class="form-control" id="number" placeholder="Phone number" required onsubmit="validateNumber()"><br>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Email" required onsubmit="validateEmail()"><br>
+      <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+      <input type="submit" name="" class="form-control submit" id="btn" value="Send Message" onclick="validateForm()">
+    </form>
+
+  </div>
+</div>
+<!-- This is the end of the form section -->
+
+<!-- This is the footer section -->
+  <footer class="footer">
+    <div class="footer-logo" ><a href="index.html"><img src ="img/logo.png"></a></div>
+    <div class="contact-info">
+      <div>
+        <h2>SPACEX HQ</h2>
+        <p>Rocket Road</br>Hawthorne, California</p>
+      </div>
+      <div class="mail">
+        <p>310-363-6000</br>media@spacex.com</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- This is the end of the footer section -->
+
+</body>
+</html>

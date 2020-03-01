@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GetJSON for API -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+
+  <script src = "js/source.js"></script>
+  </head>
+
+<body>
+  <!-- Menu -->
+<header class="head">
+  <a class="logo" href ="index.html"><img src ="img/logo.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="commercial.html">COMMERCIAL FLIGHTS</a></li>
+    <li><a href="first.html">FIRST FLIGHT</a></li>
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</header>
+
+<!-- Image behind the Welcome text -->
+<div class="header">
+  <div>
+    <div>
+    <h1 id="Welcome">Welcome to the first official <br>
+    commercial launch.</h1>
+    </div>
+    <div>
+    <button type="button">Contact us today</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- What do we do at Space X? -->
+<div class="wrapper">
+  <div class="rocket"></div>
+
+  <div class="content">
+    <div>
+      <h1>What do we do at Space X</h1>
+      <p>SpaceX designs, manufactures and launches advanced rockets and spacecraft.
+        The company was founded in 2002 to revolutionize soace technology, with the ultimate goal of enabling people to love on other planets </p>
+
+    </div>
+  </div>
+</div>
+<!-- This is the end of this first section -->
+
+<!-- This is the International space section -->
+<div class="wrapper-2">
+  <div class="content-dark">
+    <div>
+      <h1>International space station</h1>
+      <p>This is the current location of where the international <br>
+      space station is floating around in space</p>
+    </div>
+  </div>
+
+  <div class="longlat">
+    <div>
+      <h1 class="longitude"></h1>
+      <h1 class="latitude"></h1>
+    </div>
+    <div>
+      <a class="readmore" href="https://esa.int/Science_Exploration/Human_and_Robotic_Exploration/International_Space_Station/Where_is_the_International_Space_Station" target="_blank">Read more</a>
+    </div>
+  </div>
+</div>
+
+<!-- This is the end of this section -->
+
+<!-- This is the Commercial Space Airlines section -->
+<div class="wrapper">
+  <div class="starship"></div>
+  <div class="content">
+    <div>
+      <div>
+        <h1>Commercial Space Airlines</h1>
+        <p>SpaceX continues to thrive and progress towards achieving commercial spaceflights.
+          We are now launching our first official flight with three humans in the starship.
+          Tickets to see the launch live are now available</p>
+      </div>
+      <div>
+      <button class="commercialbtn" type="button">Get your tickets today</button>
+      </div>
+  </div>
+  </div>
+</div>
+  <!-- This is the end of this section -->
+
+<!-- This is the commercial flight live! section -->
+<div class="wrapper">
+  <div class="spacecap"></div>
+  <div class="content">
+    <div>
+      <h1>Watch the first commercial flight live!</h1>
+      <p>SpaceX continues to thrive and progress towards achieving commercial spaceflights. We are now launching our first official flight with three humans in the starship Tickets to see the launch live are now available</p>
+    </div>
+  </div>
+</div>
+<!-- This is the end of this section -->
+
+<!-- This is the form section -->
+
+<!-- This is the heading section in the form -->
+<div class="form">
+  <div class="place">
+    <h1>Contact us</h1>
+    <p>We are selling first row seats for the liveshow of </br>worlds first commercial flight</p>
+  </div>
+
+  <!-- This is the form input fields -->
+  <div class="box">
+    <form>
+      <input type="text" name="name" class="form-control" id="fname" placeholder="First name" required onsubmit="validateName()"><br>
+      <input type="text" name="name" class="form-control" id="lname" placeholder="Last name" required onsubmit="validateName()"><br>
+      <input type="text" name="number" class="form-control" id="number" placeholder="Phone number" required onsubmit="validateNumber()"><br>
+      <input type="email" name="email" class="form-control" id="email" placeholder="Email" required onsubmit="validateEmail()"><br>
+      <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+      <input type="submit" name="" class="form-control submit" id="btn" value="Send Message" onclick="validateForm()">
+    </form>
+
+  </div>
+</div>
+<!-- This is the end of the form section -->
+
+<!-- This is the footer section -->
+  <footer class="footer">
+    <div class="footer-logo" ><a href="index.html"><img src ="img/logo.png"></a></div>
+    <div class="contact-info">
+      <div>
+        <h2>SPACEX HQ</h2>
+        <p>Rocket Road</br>Hawthorne, California</p>
+      </div>
+      <div class="mail">
+        <p>310-363-6000</br>media@spacex.com</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- This is the end of the footer section -->
+
+</body>
+</html>

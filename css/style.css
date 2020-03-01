@@ -1,0 +1,575 @@
+/* General CSS for the site */
+html, body {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin: 0;
+font-family: Helvetica, sans-serif;
+background-color: #f4f4f4;
+}
+
+h1{
+  font-weight: lighter;
+}
+
+a {
+  color: #000;
+}
+
+/* NAV menu */
+.head {
+  background-color: #000000;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.head ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.head li a {
+  color: #ffffff;
+  display: block;
+  padding: 20px 20px;
+  /* border-right: 1px solid #222222; */
+  text-decoration: none;
+}
+
+.head li a:hover,
+.head .menu-btn:hover {
+  color: #999999;
+  border-bottom: 1px solid #999;
+  background-color: #111;
+}
+
+.head .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.head .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.head .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.head .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.head .menu-icon .navicon:before,
+.head .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.head .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.head .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.head .menu-btn {
+  display: none;
+}
+
+.head .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(45deg);
+}
+
+.head .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(-45deg);
+}
+
+.head .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.head .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* End NAV menu */
+
+/*This is the header image section with Text & CTA*/
+.header{
+  display: grid;
+  min-height: 75vh;
+  grid-template-columns: 1fr;
+  background: url(../img/home.png);
+  background-size: cover;
+  background-position: center;
+  padding-left: 8vw;
+  align-items: center;
+  /* justify-items: center; */
+}
+
+.comhead {
+  display: grid;
+  min-height: 75vh;
+  grid-template-columns: 1fr;
+  background: url(../img/commercial.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-left: 8vw;
+  align-items: center;
+}
+
+.comtext{
+  width: 400px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.firsthead {
+  display: grid;
+  min-height: 75vh;
+  grid-template-columns: 1fr;
+  background: url(../img/first.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-left: 8vw;
+  align-items: center;
+}
+
+button {
+  color: #000;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  width: 200px;
+}
+
+button:hover{
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+/*This is where the header section ends*/
+
+/*Welcome text*/
+#Welcome{
+  /* float: left; */
+  text-align: left;
+  line-height: 55px;
+  color: #fff;
+}
+/*End of Welcome text*/
+
+
+/*This is the "What do we do at Space X section?"*/
+.wrapper{
+  min-height: 600px;
+  height: 60vh;
+  border-bottom: 1px solid #666666 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
+}
+
+/*This is the div with the text content on home.html*/
+ .wrapper > div.content{
+   padding: 0 10vh 0 10vw;
+   min-height: 300px;
+   height: 100%;
+   /* max-width: 500px; */
+   display: grid;
+   text-align: center;
+   line-height: 1.8;
+   align-items: center;
+   justify-items: center;
+ }
+
+/*This is the div with the headline on commercial.html*/
+ .wrapper > div.comimp{
+   padding: 0vh 10vh 0vh 8vw;
+   min-height: 300px;
+   height: 100%;
+   /* max-width: 500px; */
+   display: grid;
+   text-align: center;
+   line-height: 1.8;
+   align-items: center;
+   justify-items: left;
+ }
+ .wrapper > div.comimp h1{
+   margin-bottom: 120px;
+ }
+
+ .wrapper > div.com.content{
+   padding: 0 10vh 0 10vw;
+   min-height: 300px;
+   height: 100%;
+   /* max-width: 500px; */
+   display: grid;
+   text-align: left;
+   line-height: 2.4;
+   align-items: center;
+   /* justify-items: center; */
+   color: #999;
+   font-size: 14px;
+ }
+
+ .com-flight h1{
+   padding-bottom: 20px;
+   border-bottom: 4px solid #000;
+   /* border-width: 70vw!important; */
+ }
+
+ .com.text{
+   line-height: 2.4;
+   align-items: center;
+   /* justify-items: center; */
+   color: #999;
+   font-size: 14px;
+
+ }
+
+ .wrapper > div.first.content{
+   padding: 0 10vh 0 5vw;
+   min-height: 300px;
+   height: 100%;
+   width: 80%;
+   /* max-width: 500px; */
+   display: grid;
+   text-align: left;
+   line-height: 2.4;
+   align-items: center;
+   justify-items: center;
+   color: #999;
+   font-size: 14px;
+ }
+
+.wrapper > div.elon {
+
+}
+
+.wrapper > div.count-down{
+  /* padding: 0 10vh 0 5vw; */
+  min-height: 300px;
+  height: 100%;
+  width: 80%;
+  /* max-width: 500px; */
+  display: grid;
+  text-align: center;
+
+  align-items: center;
+  justify-items: center;
+
+}
+
+.count-rock {
+  background: url(../img/count-rock.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1.countdown {
+  font-size: 88px;
+}
+
+
+ .wrapper-2-com {
+   min-height: 600px;
+   height: 60vh;
+   border-bottom: 1px solid #666666 !important;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
+   background-color: #000;
+ }
+ .wrapper-2-com > div.com-dark{
+   min-height: 300px;
+   height: 100%;
+   display: grid;
+   background: #000;
+   text-align: left;
+   line-height: 1.8;
+   color: #ffffff;
+   /* grid-area: "SpaceXinfo"; */
+   align-items: center;
+   justify-items: left;
+   padding-left: 5vw;
+ }
+
+.uniform {
+  padding-bottom: 5vh;
+}
+
+.suit {
+  width: 80%;
+}
+
+ .wrapper-2-com > div.spaceman{
+   /* padding-top: 50px!important; */
+   min-height: 300px;
+   background: url(../img/spaceman.jpg) no-repeat;
+   background-size: contain;
+   background-position: left center;
+   /* grid-area: "Rocket../img"; */
+
+ }
+ .wrapper > div.com-flight{
+   padding: 0 10vh 0 10vw;
+   min-height: 300px;
+   height: 100%;
+   /* max-width: 500px; */
+   display: grid;
+   text-align: left;
+   line-height: 1.8;
+   align-items: center;
+   justify-items: center;
+   order: 2;
+ }
+ .wrapper > div.com-cap {
+   /* padding-top: 10vh; */
+   margin-bottom: 60px;
+   min-height: 180px;
+   background: url(../img/rocky.png) no-repeat;
+   background-size: contain;
+   background-position: center;
+   order:1;
+ }
+
+ /*This is the div with the rocket image*/
+ .wrapper > div.rocket{
+   /* padding-top: 50px!important; */
+   min-height: 300px;
+   background: url(../img/rocket.png) no-repeat;
+   background-size: contain;
+   background-position: center center;
+   /* grid-area: "Rocket../img"; */
+
+ }
+
+/*This is where the "What do we do at Space X section ends"*/
+
+/*This is the wrapper for International space station*/
+.wrapper-2{
+  min-height: 500px;
+  height: 60vh;
+  border-bottom: 1px solid #666666 !important;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
+
+  /* grid-template-areas: "Rocket../img" "SpaceXinfo"; */
+}
+ .wrapper-2 > div.content-dark{
+   min-height: 300px;
+   height: 100%;
+   display: grid;
+   background: #000;
+   text-align: center;
+   line-height: 1.8;
+   color: #ffffff;
+   /* grid-area: "SpaceXinfo"; */
+   align-items: center;
+   justify-items: center;
+ }
+
+ .wrapper-2 > div.longlat{
+   min-height: 200px;
+   height: 100%;
+   display: grid;
+   /* background: #fff; */
+   text-align: center;
+   line-height: 1.8;
+   /* grid-area: "SpaceXinfo"; */
+   align-items: center;
+   /* justify-items: center; */
+   /* margin-top: 5vh;
+   margin-bottom: 5vh; */
+ }
+
+.readmore{
+   float: right;
+   bottom: 0px;
+   padding-right: 20px;
+   color: blue;
+ }
+
+/*This is the wrapper for the starship image*/
+.wrapper > div.starship {
+  padding-top: 10vh;
+  min-height: 200px;
+  background: url(../img/starship.jpg) no-repeat;
+  background-size: cover;
+  background-position: top right;
+}
+
+.commercialbtn {
+  color: #fff;
+  background-color: #000;
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.commercialbtn:hover{
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+/*This is the wrapper for the commercial flight live section*/
+.wrapper > div.spacecap {
+  /* padding-top: 10vh; */
+  margin-bottom: 60px;
+  min-height: 180px;
+  background: url(../img/rocky.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  order:2;
+}
+
+/*This is the form*/
+.form{
+  /* margin-top: 100px; */
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.form p {
+  line-height: 35px;
+}
+
+.box{
+  align-items: center;
+  margin-bottom: 75px;
+}
+
+.form .place{
+  margin-top: 75px;
+  /* width: 400px; */
+  /* align-self: center; */
+}
+
+.form-control{
+  width: 320px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+form .submit{
+  color: #000;
+  background-color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+  width: 200px;
+  transition: 0.2s ease;
+}
+
+form .submit:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+input{
+  height: 45px;
+}
+
+.footer{
+  /* margin-top: 100px; */
+  /* min-height: 400px; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background: #000;
+  color: #fff;
+  border-top: 1px solid #333;
+  /* text-align: center; */
+}
+
+.footer-logo img {
+  float: left;
+  width: 40vh;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.contact-info {
+  text-align: left;
+  float: right;
+  display: flex;
+  font-size: 14px;
+  padding-top: 15px;
+}
+
+.contact-info h2 {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+}
+.contact-info .mail {
+padding-top: 26px;
+padding-left: 20px;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 992px) {
+  .head li {
+    float: left;
+  }
+  .head li a {
+    padding: 20px 30px;
+  }
+  .head .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .head .menu-icon {
+    display: none;
+  }
+}
+/* Mobile menu end*/
