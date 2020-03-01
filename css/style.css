@@ -200,17 +200,17 @@ button:hover{
 /*This is the "What do we do at Space X section?"*/
 .wrapper{
   min-height: 600px;
-  height: 60vh;
+  /* height: 60vh; */
   border-bottom: 1px solid #666666 !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
 }
 
-/*This is the div with the text content on home.html*/
+/*This is the div with the text content on index.html*/
  .wrapper > div.content{
    padding: 0 10vh 0 10vw;
-   min-height: 300px;
-   height: 100%;
+   /* min-height: 400px;
+   height: 100%; */
    /* max-width: 500px; */
    display: grid;
    text-align: center;
@@ -222,7 +222,7 @@ button:hover{
 /*This is the div with the headline on commercial.html*/
  .wrapper > div.comimp{
    padding: 0vh 10vh 0vh 8vw;
-   min-height: 300px;
+   min-height: 100px;
    height: 100%;
    /* max-width: 500px; */
    display: grid;
@@ -237,8 +237,7 @@ button:hover{
 
  .wrapper > div.com.content{
    padding: 0 10vh 0 10vw;
-   min-height: 300px;
-   height: 100%;
+
    /* max-width: 500px; */
    display: grid;
    text-align: left;
@@ -268,7 +267,7 @@ button:hover{
    padding: 0 10vh 0 5vw;
    min-height: 300px;
    height: 100%;
-   width: 80%;
+   /* width: 80%; */
    /* max-width: 500px; */
    display: grid;
    text-align: left;
@@ -310,7 +309,7 @@ h1.countdown {
 
  .wrapper-2-com {
    min-height: 600px;
-   height: 60vh;
+   /* height: 60vh; */
    border-bottom: 1px solid #666666 !important;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
@@ -372,7 +371,7 @@ h1.countdown {
  /*This is the div with the rocket image*/
  .wrapper > div.rocket{
    /* padding-top: 50px!important; */
-   min-height: 300px;
+   min-height: 100px;
    background: url(../img/rocket.png) no-repeat;
    background-size: contain;
    background-position: center center;
@@ -385,7 +384,7 @@ h1.countdown {
 /*This is the wrapper for International space station*/
 .wrapper-2{
   min-height: 500px;
-  height: 60vh;
+  /* height: 60vh; */
   border-bottom: 1px solid #666666 !important;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr) );
@@ -429,7 +428,7 @@ h1.countdown {
 /*This is the wrapper for the starship image*/
 .wrapper > div.starship {
   padding-top: 10vh;
-  min-height: 200px;
+  min-height: 100px;
   background: url(../img/starship.jpg) no-repeat;
   background-size: cover;
   background-position: top right;
@@ -522,7 +521,7 @@ input{
   /* margin-top: 100px; */
   /* min-height: 400px; */
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   background: #000;
   color: #fff;
   border-top: 1px solid #333;
@@ -531,17 +530,17 @@ input{
 
 .footer-logo img {
   float: left;
-  width: 40vh;
+  width: 40%;
   padding-left: 15px;
   padding-top: 15px;
 }
 
 .contact-info {
   text-align: left;
-  float: right;
-  display: flex;
+  display: inline-flex;
   font-size: 14px;
   padding-top: 15px;
+  : :
 }
 
 .contact-info h2 {
